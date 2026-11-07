@@ -1,0 +1,20 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Reproducibility test artifacts
+output/_repro/
+
+# Deprecated/temporary full output folders (pipeline uses output/ for all scales)
+output_full/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
