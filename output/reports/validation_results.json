@@ -1,0 +1,65 @@
+{
+  "gates": {
+    "Gate 1: Zero Unexpected Structural Failures": true,
+    "Gate 2: Injected Anomalies Found Exactly as Planted": true,
+    "Gate 3: Detection Recall >= 0.95 for All TRUE Types": true,
+    "Gate 4: Alert Target & FP Representation (>=20%)": true,
+    "Gate 5: Zero Ground Truth Leakage": true
+  },
+  "metrics": {
+    "baseline_alerts_count": 1008,
+    "detection_recall": {
+      "TRUE_CIRCULAR": {
+        "detected": 40,
+        "planted": 40,
+        "recall": 1.0
+      },
+      "TRUE_DORMANT": {
+        "detected": 85,
+        "planted": 85,
+        "recall": 1.0
+      },
+      "TRUE_NEW_DEVICE": {
+        "detected": 130,
+        "planted": 130,
+        "recall": 1.0
+      },
+      "TRUE_OUTLIER": {
+        "detected": 90,
+        "planted": 90,
+        "recall": 1.0
+      },
+      "TRUE_VELOCITY": {
+        "detected": 130,
+        "planted": 130,
+        "recall": 1.0
+      }
+    },
+    "disposition_agreement": 1.0,
+    "fp_alerts_count": 223,
+    "fp_closed_false_positive_pct": 1.0,
+    "injected_anomalies_found": {
+      "ALERT_NO_TRIGGER": 5,
+      "DISPOSITION_BEFORE_ALERT": 5,
+      "NEGATIVE_BALANCE_NO_OD": 10,
+      "TRANSFER_LEG_MISMATCH": 10,
+      "TXN_ON_CLOSED_ACCOUNT": 10
+    },
+    "injected_anomalies_planted": {
+      "ALERT_NO_TRIGGER": 5,
+      "DISPOSITION_BEFORE_ALERT": 5,
+      "NEGATIVE_BALANCE_NO_OD": 10,
+      "TRANSFER_LEG_MISMATCH": 10,
+      "TXN_ON_CLOSED_ACCOUNT": 10
+    },
+    "precision_at_k": {
+      "P@100": 1.0,
+      "P@250": 1.0,
+      "P@50": 1.0
+    },
+    "unexpected_failures": 0,
+    "unmapped_alerts_count": 0
+  },
+  "scale": "full",
+  "unexpected_failures": 0
+}

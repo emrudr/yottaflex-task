@@ -1,0 +1,30 @@
+{
+  "entity_counts": {
+    "accounts": 7000,
+    "analysts": 12,
+    "customers": 5000,
+    "merchants": 600,
+    "transactions": 100000
+  },
+  "file_checksums": {
+    "account_devices.csv": "752756753d8d836017fb23e7c477a9ab759115c35078cbb25f85535a41508447",
+    "account_status_events.csv": "367ee8a40d6b62ab1b9a1fc222b0144f884b6b3894b49bfb8970b371dc4507c9",
+    "accounts.csv": "68c484f3183a3dc54355a749568250f433cdc6dece1d69d4fffec9a81c0cf8ed",
+    "alert_evidence.csv": "882f02d4f17b5decb35f0a0b9f6ca33e148ddcb46d70aa77af6460c19e7b5178",
+    "alert_score_components.csv": "477a0b911f32f111e68a4238180673857c13567b6264722534b2f00d4bd97758",
+    "alerts.csv": "01b51a44930e7712856db8477fd3dac9b9ea28f6951a8ceedb283d08ed9621d3",
+    "analyst_actions.csv": "3f13da53615cf5ee5643562a7a4a1df4996cdfecaee683e27d85d61fea914062",
+    "analysts.csv": "43b4330dd255655c9177e8a396a7a860a7ad654dfc46d779221b20426506fc5d",
+    "cases.csv": "5cc8aa07957eff857f53f5e9eeaf469947e29e0fdbf1469b9359c1ce3574eb07",
+    "customers.csv": "2500127d3433589b364cb6b6dcfb6bdfa674cacc94268772be7aa6c6f63b8b90",
+    "devices.csv": "0f0043779bc88401317ba435643cbe5a6af4302f847b011eda29254940afcb01",
+    "merchants.csv": "029f8c2210f1472aebfd87369920eadebd9c58c7e0942292b22be93aa52c5b9a",
+    "risk_rules.csv": "3e720f2c043d2521fa9537e2ced161aeb8ce58ced31db6ab55399071e2527700",
+    "transactions.csv": "20ee5a62f5bfa92b328a6cb64171c5848bd999bb2f823e7be44018e136becd88",
+    "transfer_links.csv": "62a20204eb2ae528f49ba9fd656ed6aef66f0373b9e8b5c57ea803a71a5e52a0"
+  },
+  "generated_at": "2026-11-01 00:00:00",
+  "generator_version": "2.0.0",
+  "scale_preset": "full",
+  "seed": 20261022
+}
