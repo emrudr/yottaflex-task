@@ -15,7 +15,7 @@ from gen_master import generate_master_data
 from gen_scenarios import ScenarioBuilder
 from gen_transactions import generate_transactions_dataset
 from io_utils import compute_sha256, ensure_dir, save_ground_truth, save_table
-from schema import DEFAULT_RULES_SEED_DATA, generate_data_dictionary_md, generate_rules_md
+from schema import DEFAULT_RULES_SEED_DATA, generate_data_dictionary_md
 
 def update_account_latest_status(accounts: List[Dict[str, Any]], status_events: List[Dict[str, Any]]):
     """Ensure accounts.status matches the latest chronological status event."""
@@ -95,8 +95,6 @@ def main():
     docs_dir = ensure_dir(Path("docs"))
     with open(docs_dir / "data_dictionary.md", "w", encoding="utf-8") as f:
         f.write(generate_data_dictionary_md())
-    with open(docs_dir / "rules.md", "w", encoding="utf-8") as f:
-        f.write(generate_rules_md(DEFAULT_RULES_SEED_DATA))
 
     save_source_manifest(args.out, cfg, args.seed)
     print(f"[+] Generation complete: {len(transactions)} txns, {len(master['accounts'])} accounts, {len(master['customers'])} customers.")
